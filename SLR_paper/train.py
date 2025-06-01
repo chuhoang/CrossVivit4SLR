@@ -179,7 +179,7 @@ def main(args, tuning = True):
                     'max_accuracy': max_accuracy,          
                     }
                 torch.save(state_dict, 
-                    '/home/tludemo/sign_language/weight/test.pt')
+                    'checkpoints/best.pt')
             else:
                 state_dict ={
                     'model': vit.state_dict(),
@@ -190,7 +190,7 @@ def main(args, tuning = True):
                     'va_accuracy': val_accuracy['acc1'],          
                     }
                 torch.save(state_dict, 
-                    '/home/tludemo/sign_language/weight/a.pt')
+                    'checkpoints/last.pt')
 
 
 parser = argparse.ArgumentParser('CrossViT training and evaluation script', parents=[get_args_parser()])
