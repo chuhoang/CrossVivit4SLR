@@ -1,0 +1,5 @@
+timm==0.4.12
+fvcore
+decord
+torch
+torchvision
